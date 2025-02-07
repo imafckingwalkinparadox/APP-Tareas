@@ -11,6 +11,10 @@
     -webkit-box-shadow: 3px 10px 5px 0px rgba(0, 0, 0, 0.75);
     -moz-box-shadow: 3px 10px 5px 0px rgba(0, 0, 0, 0.75);
     box-shadow: 3px 10px 5px 0px rgba(0, 0, 0, 0.75);
+
+    background-image: url("https://c.wallhere.com/photos/9e/06/digital_art_skeleton_black_background_science_fiction-2279410.jpg!d");
+    background-position: center;
+    background-repeat: no-repeat;
 }
 
 .div-header img {
