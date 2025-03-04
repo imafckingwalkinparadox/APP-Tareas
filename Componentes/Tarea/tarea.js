@@ -1,6 +1,6 @@
 import { tareas } from './data.js';
 
-function tarea(){
+function CargarTarea(){
     let tareaDiv = document.createElement('div');
     tareaDiv.className = "div-tarea";
 
@@ -40,7 +40,7 @@ function tarea(){
     let boton = document.createElement('button');
     boton.className = "bttn";
     boton.innerHTML = `
-        <h3 class="title-bttn">Write a task...</h3>
+        <h3 class="title-bttn"></h3>
         <button>Add</button>
     `;
     tareaDiv.appendChild(boton);
@@ -48,4 +48,4 @@ function tarea(){
     return tareaDiv;
 }
 
-export {tarea};
+export {CargarTarea};

@@ -1,3 +1,5 @@
+import { agregarTareas } from "../Formulario/funcionesFormulario.js";
+
 // data.js
 export const tareas = [
     {
