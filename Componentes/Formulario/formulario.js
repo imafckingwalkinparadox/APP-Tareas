@@ -1,16 +1,24 @@
-import { agregarTareas } from "./funcionesFormulario.js";
+import { cargarTareas } from "./funcionesFormulario.js";
+import { consultarTareas } from "../Tarea/tarea.js";
 
-function formulario(){
-    let formulario = document.createElement('footer');
-    formulario.className = "div-formulario";
+export function cargarFormulario() {
+    const formulario = document.createElement("div");
+    formulario.className = "formulario";
 
+    const input = document.createElement("input");
+    input.type = "text";
+    input.placeholder = "Escribe una tarea...";
 
-    let inputTexto = document.createElement('input');
-    inputTexto.type = "text";
-    inputTexto.placeholder = "Escribe tu tarea...";
-    formulario.appendChild(inputTexto);
+    const button = document.createElement("button");
+    button.textContent = "Agregar";
+
+    // Evento para agregar tareas al hacer clic en el botón
+    button.addEventListener("click", () => {
+        cargarTareas(input);
+    });
+
+    formulario.appendChild(input);
+    formulario.appendChild(button);
 
     return formulario;
 }
-
-export {formulario}

@@ -1,22 +1,12 @@
-function marcarTarea() {
-    const items = document.querySelectorAll(".Item");
-  
-    items.forEach((item) => {
-      const checkbox = item.querySelector(".task-checkbox");
-      const taskText = item.querySelector(".task-text");
-  
-      item.addEventListener("click", (e) => {
-        if (e.target === checkbox) {
-          return;
-        }
-  
-        checkbox.checked = !checkbox.checked;
-        if (checkbox.checked) {
-          taskText.style.textDecoration = "line-through";
-        } else {
-          taskText.style.textDecoration = "none";
-        }
-      });
-    });
+export function completarTarea(event) {
+  const checkbox = event.target;
+  const texto = checkbox.nextElementSibling;
+
+  if (checkbox.checked) {
+      texto.style.textDecoration = "line-through";
+      texto.style.color = "red";
+  } else {
+      texto.style.textDecoration = "none";
+      texto.style.color = "black";
   }
-  export{marcarTarea}
+}
