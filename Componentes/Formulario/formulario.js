@@ -1,5 +1,4 @@
 import { cargarTareas } from "./funcionesFormulario.js";
-import { consultarTareas } from "../Tarea/tarea.js";
 
 export function cargarFormulario() {
     const formulario = document.createElement("div");

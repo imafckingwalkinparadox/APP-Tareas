@@ -2,7 +2,7 @@ import { itemTarea } from "./itemTarea.js";
 
 // Consultar las tareas al backend
 export function consultarTareas() {
-    fetch('http://localhost:3000/tareas')
+    fetch('http://localhost:3000/tarea')
         .then(response => response.json())
         .then(data => {
             cargarTareasDesdeDB(data);  // Llama a la función que mete las tareas en el DOM
