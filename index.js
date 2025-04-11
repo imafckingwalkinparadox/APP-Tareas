@@ -12,7 +12,7 @@ function usuarioLogueado() {
 }
 
 function cargarDom() {
-    DOM.innerHTML = ""; // Limpiar el contenido antes de cargar algo nuevo
+    DOM.innerHTML = "";
     if (usuarioLogueado()) {
         DOM.appendChild(header());
         DOM.appendChild(cargarTarea());

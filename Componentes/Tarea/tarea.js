@@ -11,6 +11,7 @@ export function consultarTareas() {
 }
 
 // Función que crea los elementos y los mete en el HTML
+// En tarea.js
 function cargarTareasDesdeDB(tareas) {
     const contenedorTareas = document.getElementById("tareas-container");
     contenedorTareas.innerHTML = '';  // Limpiamos lo que había antes
@@ -26,6 +27,7 @@ function cargarTareasDesdeDB(tareas) {
         contenedorTareas.appendChild(elementoTarea);
     });
 }
+
 
 // Función para cargar la sección de tareas
 export function cargarTarea() {
